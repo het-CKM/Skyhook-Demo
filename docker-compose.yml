@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  skyhook:
+    build: ./skyhook
+    image: skyhook_demo_skyhook
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    env_file: '.env'
+
+  crawler:
+    build: ./crawler
+    image: skyhook_demo_crawler
+    env_file: '.env'
+
+  scraper:
+    build: ./scraper
+    image: skyhook_demo_scraper
+    env_file: '.env'
