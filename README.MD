@@ -1,12 +1,17 @@
 # Skyhook Demo
 
-This is a demo for skyhook, it is split into 3 applications:
+This is a demo for skyhook. It is split into 3 applications:
 
 * **skyhook**: Express.js API with one endpoint. It receives gathered data and, for demo purposes, prints some
   information to the console.
-* **crawler**: NodeJs application which represents a crawler. For this demo it reads data from a file and sends it to 
-  **Skyhook**.
+* **crawler**: NodeJs application which represents a crawler. For this demo it reads data from a file and sends it to
+  **skyhook**.
 * **scraper**: Same as **crawler** but written in Python.
+
+## Table of contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Configuration](#configuration)
 
 ## Installation
 
@@ -21,10 +26,10 @@ To run this demo in docker, you need **docker** and **docker-compose** to be ins
 To run this demo manually you need the following installed on your machine:
 
 * **Python 3**
-    * **requests**: `pip3 install requests` or `pip install requests`
+    * **requests**: `pip3 install requests` or <nobr>`pip install requests`</nobr>
 * **NodeJs**
     * Dependencies for the **NodeJs** applications can be installed by running
-      `npm install` in `<root folder>/crawler/` and `<root folder>/skyhook/`
+      `npm install` in <nobr>`<root folder>/crawler/`</nobr> and <nobr>`<root folder>/skyhook/`</nobr>
 
 ## Usage
 
@@ -41,7 +46,8 @@ All commands should be run in the root folder of the project.
 
 ### Manual
 
-To run each application, all commands should be run in their respective folder i.e. `<root folder>/<application>/`
+To run each application, all commands should be run in their respective folder i.e. 
+<nobr>`<root folder>/<application>/`</nobr>
 
 * **skyhook**: `node app.js`
 * **crawler**: `node app.js`
@@ -53,12 +59,11 @@ Configuration is done via environment variables. For manual use there are fallba
 
 ### Docker
 
-All values are defined in the `.env` file.
-If you change `SKYHOOK_PORT` make sure you change the `ports:` and `expose:` properties in `docker-compose.yml`.
+All values are defined in the `.env` file. If you change `SKYHOOK_PORT` make sure you change the `ports:` and `expose:`
+properties in `docker-compose.yml`.
 
 ### Manual
 
-To change configuration when running the demo manually, the fallback values should be changed.
-These are defined in the `app.js` and `main.py` files.
-When changing any fallback for an environment variable starting with `SKYHOOK_`,
-make sure to change it in all applications.
+To change configuration when running the demo manually, the fallback values should be changed. These are defined in
+the `app.js` and `main.py` files. When changing any fallback for an environment variable starting with `SKYHOOK_`, make
+sure to change it in all applications.
