@@ -40,7 +40,7 @@ see request information in the output of **skyhook** ever time you run one of th
 
 All commands should be run in the root folder of the project.
 
-* **skyhook**: `docker-compose up api`
+* **skyhook**: `docker-compose up skyhook`
 * **crawler**: `docker-compose run --rm crawler`
 * **scraper**: `docker-compose run --rm scraper`
 
