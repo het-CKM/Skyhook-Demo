@@ -9,6 +9,7 @@ This is a demo for skyhook. It is split into 3 applications:
 * **scraper**: Same as **crawler** but written in Python.
 
 ## Table of contents
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [Configuration](#configuration)
@@ -46,7 +47,7 @@ All commands should be run in the root folder of the project.
 
 ### Manual
 
-To run each application, all commands should be run in their respective folder i.e. 
+To run each application, all commands should be run in their respective folder i.e.
 <nobr>`<root folder>/<application>/`</nobr>
 
 * **skyhook**: `node app.js`
@@ -66,4 +67,4 @@ properties in `docker-compose.yml`.
 
 To change configuration when running the demo manually, the fallback values should be changed. These are defined in
 the `app.js` and `main.py` files. When changing any fallback for an environment variable starting with `SKYHOOK_`, make
-sure to change it in all applications.
+sure to change it in all three applications.

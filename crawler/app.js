@@ -1,7 +1,7 @@
 const axios = require('axios')
 const fs = require('fs')
 
-// Change values after || to change config for non-docker use
+// Change values after || to change config for manual use
 const filePath = process.env.CRAWLER_DATA_FILE_PATH || 'MOCK_DATA.json'
 const skyhookHost = process.env.SKYHOOK_HOST || 'localhost'
 const skyhookPort = process.env.SKYHOOK_PORT || '3000'
@@ -11,9 +11,10 @@ const skyhookUrl = `http://${skyhookHost}:${skyhookPort}${skyhookUploadUri}`;
 const fileContent = fs.readFileSync(filePath);
 const crawledData = JSON.parse(fileContent);
 
+const currentTime = new Date().toLocaleString();
 const data = {
-  providerName: 'proAnnaCrawler',
-  batchName: 'proAnnaCrawler 15-3-2021 10:46',
+  providerName: 'proAnaCrawler',
+  batchName: `proAnaCrawler ${currentTime}`,
   data: crawledData
 };
 

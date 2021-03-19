@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-// Change values after || to change config for non-docker use
+// Change values after || to change config for manual use
 const port = process.env.SKYHOOK_PORT || 3000;
 const uploadUri = process.env.SKYHOOK_UPLOAD_URI || '/api/data_providers/upload_data'
 
