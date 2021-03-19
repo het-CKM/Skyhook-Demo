@@ -27,10 +27,10 @@ To run this demo in docker, you need **docker** and **docker-compose** to be ins
 To run this demo manually you need the following installed on your machine:
 
 * **Python 3**
-    * **requests**: `pip3 install requests` or <nobr>`pip install requests`</nobr>
+    * **requests**: `pip3 install requests` or `pip install requests`
 * **NodeJs**
     * Dependencies for the **NodeJs** applications can be installed by running
-      `npm install` in <nobr>`<root folder>/crawler/`</nobr> and <nobr>`<root folder>/skyhook/`</nobr>
+      `npm install` in `<root_folder>/crawler/` and `<root_folder>/skyhook/`
 
 ## Usage
 
@@ -47,8 +47,7 @@ All commands should be run in the root folder of the project.
 
 ### Manual
 
-To run each application, all commands should be run in their respective folder i.e.
-<nobr>`<root folder>/<application>/`</nobr>
+To run each application, all commands should be run in their respective folder i.e. `<root_folder>/<application>/`
 
 * **skyhook**: `node app.js`
 * **crawler**: `node app.js`
